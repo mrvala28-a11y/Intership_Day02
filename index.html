@@ -1,53 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Day_02</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>Day_02</title>
 </head>
 
-<body class="bg-gray-900 text-white">
+<body>
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-white/5 border-b border-white/10 shadow-xl">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
 
+      <!-- Logo -->
+      <a href="index.html" class="flex title-font font-medium items-center mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+          class="w-10 h-10 text-white p-2 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full shadow-lg"
+          viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span
+          class="ml-3 text-xl font-extrabold bg-gradient-to-r from-indigo-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+          Tailblocks
+        </span>
+      </a>
 
-<nav class="bg-gray-800 shadow-lg">
-    <div class="max-w-7xl mx-auto px-6">
-        <div class="flex justify-between items-center h-16">
+      <!-- Navigation -->
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a href="index.html" class="mr-5 hover:text-pink-400 transition">Home</a>
+        <a href="projects.html" class="mr-5 hover:text-pink-400 transition">Projects</a>
+        <a href="about.html" class="mr-5 hover:text-pink-400 transition">About</a>
+        <a href="conect.html" class="mr-5 hover:text-pink-400 transition">Contact</a>
+      </nav>
 
-        
-            <div class="text-2xl font-bold text-pink-400">
-                MyWebsite
-            </div>
+      <!-- Button -->
+      <button
+        class="inline-flex items-center bg-gradient-to-r from-pink-500 to-purple-600 px-4 py-2 rounded-full shadow-lg hover:scale-105 transition">
+        Logout
+      </button>
 
-            
-            <ul class="flex space-x-8 text-lg">
-                <li>
-                    <a href="#" class="hover:text-pink-400 transition duration-300">
-                        Home
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-pink-400 transition duration-300">
-                        Projects
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="hover:text-pink-400 transition duration-300">
-                        About
-                    </a>
-                </li>
-            </ul>
-
-        </div>
     </div>
-</nav>
+  </header>
 
-<!-- Content -->
-<section class="flex justify-center items-center h-[80vh]">
-    <h1 class="text-4xl font-bold bg-pink-500 px-10 py-6 rounded-xl shadow-lg">
-        Welcome to Tailwind CSS 🚀
-    </h1>
-</section>
+
+  <section class="body-font bg-gradient-to-br from-slate-950 via-slate-900 to-black text-gray-200">
+    <div class="container mx-auto flex px-5 py-28 md:flex-row flex-col items-center">
+
+      <!-- IMAGE -->
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-12 md:mb-0">
+        <img class="object-cover object-center rounded-3xl shadow-2xl hover:scale-105 transition-all duration-500"
+          alt="hero" src="LOGO-removebg-preview.png">
+      </div>
+
+      <!-- CONTENT -->
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+
+        <h1
+          class="title-font sm:text-5xl text-4xl mb-6 font-extrabold bg-gradient-to-r from-indigo-400 via-pink-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
+          KHODIYAR DIGITAL STUDIO
+          <br class="hidden lg:inline-block">
+          📸 PHOTOGRAPHY
+        </h1>
+
+        <p class="mb-10 leading-relaxed text-gray-300 text-lg max-w-xl">
+          🎞️ Capturing moments and creating timeless memories through cinematic photography.
+          Every image reflects emotion, light, and perspective — turning simple moments into
+          unforgettable stories.
+        </p>
+
+        <div class="flex justify-center md:justify-start">
+          <button
+            class="inline-flex text-white bg-gradient-to-r from-indigo-500 to-purple-600 border-0 py-3 px-10 rounded-full text-lg shadow-xl hover:scale-110 hover:shadow-indigo-500/50 transition-all duration-300">
+            READ MORE
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="body-font bg-gradient-to-br from-slate-950 via-slate-900 to-black text-gray-200">
+    <div class="container px-5 py-28 mx-auto">
+
+
+      <div class="flex flex-wrap w-full mb-20">
+        <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+          <h1
+            class="sm:text-4xl text-3xl font-extrabold title-font mb-4 bg-gradient-to-r from-indigo-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+            🔍 My Photography Style
+          </h1>
+          <div class="h-1 w-24 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full"></div>
+        </div>
+
+        <p class="lg:w-1/2 w-full leading-relaxed text-gray-300 text-lg">
+          ✨ Why I Love Photography
+          Photography allows me to express creativity without words.
+          I explore light, angles, and emotions to preserve moments that never return.
+        </p>
+      </div>
+
+
+      <div class="flex flex-wrap -m-4">
+
+
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div
+            class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-indigo-500/30 transition-all">
+            <img class="h-44 rounded-xl w-full object-cover object-center mb-6 hover:scale-105 transition"
+              src="https://static.vecteezy.com/system/resources/thumbnails/049/855/708/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-free-photo.jpg">
+            <h3 class="tracking-widest text-pink-400 text-xs font-semibold">NATURE</h3>
+            <h2 class="text-xl text-white font-bold mb-3">LAND</h2>
+            <p class="leading-relaxed text-gray-300">
+              Capturing natural beauty with cinematic light and depth.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div
+            class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-purple-500/30 transition-all">
+            <img class="h-44 rounded-xl w-full object-cover object-center mb-6 hover:scale-105 transition"
+              src="https://png.pngtree.com/thumb_back/fh260/background/20230518/pngtree-50-beautiful-black-and-white-retro-camera-wallpapers-4k-image_2581237.jpg">
+            <h3 class="tracking-widest text-pink-400 text-xs font-semibold">CAMERA</h3>
+            <h2 class="text-xl text-white font-bold mb-3">HD 14V</h2>
+            <p class="leading-relaxed text-gray-300">
+              Timeless retro photography with modern storytelling.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div
+            class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-cyan-500/30 transition-all">
+            <img class="h-44 rounded-xl w-full object-cover object-center mb-6 hover:scale-105 transition"
+              src="https://t4.ftcdn.net/jpg/04/39/89/01/360_F_439890152_sYbPxa1ANTSKcZuUsKzRAf9O7bJ1Tx5B.jpg">
+            <h3 class="tracking-widest text-pink-400 text-xs font-semibold">HIMALAYA</h3>
+            <h2 class="text-xl text-white font-bold mb-3">KEDARNATH</h2>
+            <p class="leading-relaxed text-gray-300">
+              Mountain landscapes with dramatic light and scale.
+            </p>
+          </div>
+        </div>
+
+        <!-- CARD -->
+        <div class="xl:w-1/4 md:w-1/2 p-4">
+          <div
+            class="bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-pink-500/30 transition-all">
+            <img class="h-44 rounded-xl w-full object-cover object-center mb-6 hover:scale-105 transition"
+              src="https://www.hdwallpapers.in/download/photographer_at_sunset_4k-3840x2160.jpg">
+            <h3 class="tracking-widest text-pink-400 text-xs font-semibold">TRAVEL</h3>
+            <h2 class="text-xl text-white font-bold mb-3">JUNAGADH</h2>
+            <p class="leading-relaxed text-gray-300">
+              Golden hour travel moments with cinematic tones.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="body-font bg-gradient-to-br from-slate-950 via-slate-900 to-black text-gray-200">
+    <div class="container flex flex-wrap px-5 py-28 mx-auto items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="md:w-1/2 md:pr-12 md:py-8 md:border-r md:border-b-0 mb-12 md:mb-0 pb-12 border-b border-white/10">
+        <h1
+          class="sm:text-4xl text-3xl font-extrabold title-font mb-4 bg-gradient-to-r from-indigo-400 via-pink-500 to-purple-500 bg-clip-text text-transparent">
+          🎞️ Capturing Stories Through the Lens
+        </h1>
+
+        <p class="leading-relaxed text-lg text-gray-300">
+          Photography is more than just clicking a picture — it is a powerful form of storytelling.
+          Through my lens, I capture emotions, moments, and details that often go unnoticed.
+          Every photograph carries a story, a feeling, and a message waiting to be discovered.
+        </p>
+
+        <a class="text-pink-400 inline-flex items-center mt-6 hover:underline">
+          Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+
+      <!-- RIGHT LIST -->
+      <div class="flex flex-col md:w-1/2 md:pl-12">
+        <h2 class="title-font font-semibold tracking-widest text-sm mb-4 text-pink-400">
+          CATEGORIES
+        </h2>
+
+        <nav class="flex flex-wrap list-none -mb-1 text-gray-300">
+          <li class="lg:w-1/3 mb-2 w-1/2 hover:text-pink-400 transition">• Natural lighting</li>
+          <li class="lg:w-1/3 mb-2 w-1/2 hover:text-pink-400 transition">• Minimal editing</li>
+          <li class="lg:w-1/3 mb-2 w-1/2 hover:text-pink-400 transition">• Storytelling frames</li>
+          <li class="lg:w-1/3 mb-2 w-1/2 hover:text-pink-400 transition">• Clean & cinematic look</li>
+        </nav>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="body-font bg-gradient-to-br from-black via-slate-900 to-slate-950 text-gray-200">
+    <div class="container px-5 py-28 mx-auto flex flex-wrap">
+
+
+      <div class="flex w-full mb-24 flex-wrap">
+        <h1
+          class="sm:text-4xl text-3xl font-extrabold title-font lg:w-1/3 lg:mb-0 mb-6 bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">
+          🌄 My Journey in Photography
+        </h1>
+
+        <p class="lg:pl-6 lg:w-2/3 mx-auto leading-relaxed text-lg text-gray-300">
+          My journey started with curiosity — about light, angles, shadows, and composition.
+          Over time, curiosity turned into passion. Each photograph teaches me something new,
+          and every successful shot motivates me to push my creativity further.
+        </p>
+      </div>
+
+
+      <div class="flex flex-wrap md:-m-2 -m-1">
+
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-1/2">
+            <img class="w-full h-full object-cover rounded-xl hover:scale-105 transition"
+              src="https://wanderlusters.com/wp-content/uploads/2015/11/horse-cades-bay-nevis-4k-photo-1.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img class="w-full h-full object-cover rounded-xl hover:scale-105 transition"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwnRjoZX7oIhcHZacoFUXGCUYgIwv0SnrqsA&s">
+          </div>
+          <div class="md:p-2 p-1 w-full">
+            <img class="w-full h-full object-cover rounded-2xl hover:scale-105 transition"
+              src="https://i.pinimg.com/736x/a9/26/16/a926161c123459687fd7b9de450c45ce.jpg">
+          </div>
+        </div>
+
+        <div class="flex flex-wrap w-1/2">
+          <div class="md:p-2 p-1 w-full">
+            <img class="w-full h-full object-cover rounded-2xl hover:scale-105 transition"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6E1cOQNpFHWRnEC6F2Cm1jUuleLC_PdJsbg&s">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img class="w-full h-full object-cover rounded-xl hover:scale-105 transition"
+              src="https://t3.ftcdn.net/jpg/06/61/55/74/360_F_661557441_QQlqKhkI1MxwwuZvmgARLdgBT4AuxHeF.jpg">
+          </div>
+          <div class="md:p-2 p-1 w-1/2">
+            <img class="w-full h-full object-cover rounded-xl hover:scale-105 transition"
+              src="https://static.vecteezy.com/system/resources/thumbnails/049/855/471/small/nature-background-high-resolution-wallpaper-for-a-serene-and-stunning-view-free-photo.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="body-font bg-gradient-to-br from-slate-950 via-slate-900 to-black text-gray-200">
+    <div class="container px-5 py-28 mx-auto">
+
+      <!-- HEADING -->
+      <h1
+        class="sm:text-5xl text-4xl font-extrabold title-font text-center mb-24 bg-gradient-to-r from-indigo-400 via-pink-500 to-purple-500 bg-clip-text text-transparent drop-shadow-lg">
+        📷 Types of Photography
+        <br class="hidden sm:block">
+        I Explore
+      </h1>
+
+      <!-- CONTENT -->
+      <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-10">
+
+        <!-- BLOCK 1 -->
+        <div class="p-4 md:w-1/3 flex">
+          <div
+            class="w-14 h-14 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-indigo-500 to-purple-600 text-white shadow-lg mb-4 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-6 h-6" viewBox="0 0 24 24">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+            </svg>
+          </div>
+
+          <div
+            class="flex-grow pl-6 bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-indigo-500/30 transition-all">
+            <h2 class="text-white text-xl title-font font-bold mb-3">
+              🚀 The Evolving World of Photography
+            </h2>
+            <p class="leading-relaxed text-gray-300">
+              The future of photography is driven by innovation, creativity, and advanced technology.
+              Photography is no longer just capturing images — it has become a powerful storytelling tool
+              that blends art, emotion, and digital expression.
+            </p>
+            <a class="mt-4 text-pink-400 inline-flex items-center hover:underline">
+              Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- BLOCK 2 -->
+        <div class="p-4 md:w-1/3 flex">
+          <div
+            class="w-14 h-14 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg mb-4 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-6 h-6" viewBox="0 0 24 24">
+              <circle cx="6" cy="6" r="3"></circle>
+              <circle cx="6" cy="18" r="3"></circle>
+              <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+            </svg>
+          </div>
+
+          <div
+            class="flex-grow pl-6 bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-cyan-500/30 transition-all">
+            <h2 class="text-white text-xl title-font font-bold mb-3">
+              🌐 Immersive & 3D Photography
+            </h2>
+            <p class="leading-relaxed text-gray-300">
+              The future introduces 360° photography, 3D imaging, VR & AR visuals.
+              These technologies allow viewers to step inside images, creating immersive
+              experiences for education, architecture, gaming, and storytelling.
+            </p>
+            <a class="mt-4 text-pink-400 inline-flex items-center hover:underline">
+              Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- BLOCK 3 -->
+        <div class="p-4 md:w-1/3 flex">
+          <div
+            class="w-14 h-14 inline-flex items-center justify-center rounded-full bg-gradient-to-br from-pink-500 to-red-500 text-white shadow-lg mb-4 flex-shrink-0">
+            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              class="w-6 h-6" viewBox="0 0 24 24">
+              <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+          </div>
+
+          <div
+            class="flex-grow pl-6 bg-white/5 backdrop-blur-lg p-6 rounded-2xl border border-white/10 shadow-xl hover:-translate-y-2 hover:shadow-pink-500/30 transition-all">
+            <h2 class="text-white text-xl title-font font-bold mb-3">
+              🛰️ Drone & Aerial Photography
+            </h2>
+            <p class="leading-relaxed text-gray-300">
+              Drone photography continues to evolve with AI-based flight control,
+              obstacle detection, and cinematic automation—unlocking breathtaking
+              perspectives once impossible to capture.
+            </p>
+            <a class="mt-4 text-pink-400 inline-flex items-center hover:underline">
+              Learn More
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="body-font bg-gradient-to-br from-slate-950 via-slate-900 to-black text-gray-200">
+    <div class="container mx-auto flex px-5 py-28 md:flex-row flex-col items-center">
+
+
+      <div
+        class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+
+        <h1
+          class="title-font sm:text-5xl text-4xl mb-6 font-extrabold bg-gradient-to-r from-pink-400 via-purple-500 to-indigo-500 bg-clip-text text-transparent drop-shadow-lg">
+          ✨ Capturing Moments. Creating Memories.
+        </h1>
+
+        <p class="mb-10 leading-relaxed text-gray-300 text-lg max-w-xl">
+          Thank you for visiting our photography portfolio.
+          Every photograph tells a story, preserves emotion, and captures moments that last forever.
+          Our passion drives us to create meaningful, creative, and high-quality visuals.
+        </p>
+
+        <!-- EMAIL + BUTTON -->
+        <div class="flex w-full md:justify-start justify-center items-end gap-4">
+          <div class="relative md:w-full lg:w-full xl:w-1/2 w-2/4">
+            <label for="hero-field" class="leading-7 text-sm text-gray-400">EMAIL</label>
+            <input type="text" id="hero-field" name="hero-field"
+              class="w-full bg-white/10 backdrop-blur-md rounded-full border border-white/20 focus:ring-2 focus:ring-purple-500 focus:border-purple-500 text-base outline-none text-white py-2 px-5 transition-all">
+          </div>
+
+          <button
+            class="inline-flex text-white bg-gradient-to-r from-indigo-500 to-purple-600 border-0 py-3 px-8 rounded-full text-lg shadow-xl hover:scale-110 hover:shadow-purple-500/40 transition-all">
+            SUBMIT
+          </button>
+        </div>
+
+        <p class="text-sm mt-3 text-gray-400 mb-10 w-full">
+          We respect your privacy. No spam, ever.
+        </p>
+
+        <!-- STORE BUTTONS -->
+        <div class="flex lg:flex-row md:flex-col gap-4">
+          <button
+            class="bg-white/10 backdrop-blur-md inline-flex py-3 px-6 rounded-xl items-center border border-white/20 hover:bg-white/20 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 text-pink-400"
+              viewBox="0 0 512 512">
+              <path
+                d="M99.617 8.057a50.191 50.191 0 00-38.815-6.713l230.932 230.933 74.846-74.846L99.617 8.057zM32.139 20.116c-6.441 8.563-10.148 19.077-10.148 30.199v411.358c0 11.123 3.708 21.636 10.148 30.199l235.877-235.877L32.139 20.116zM464.261 212.087l-67.266-37.637-81.544 81.544 81.548 81.548 67.273-37.64c16.117-9.03 25.738-25.442 25.738-43.908s-9.621-34.877-25.749-43.907zM291.733 279.711L60.815 510.629c3.786.891 7.639 1.371 11.492 1.371a50.275 50.275 0 0027.31-8.07l266.965-149.372-74.849-74.847z">
+              </path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-400 mb-1">GET IT ON</span>
+              <span class="title-font font-semibold text-white">Google Play</span>
+            </span>
+          </button>
+
+          <button
+            class="bg-white/10 backdrop-blur-md inline-flex py-3 px-6 rounded-xl items-center border border-white/20 hover:bg-white/20 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-6 h-6 text-indigo-400"
+              viewBox="0 0 305 305">
+              <path
+                d="M40.74 112.12c-25.79 44.74-9.4 112.65 19.12 153.82C74.09 286.52 88.5 305 108.24 305c.37 0 .74 0 1.13-.02 9.27-.37 15.97-3.23 22.45-5.99 7.27-3.1 14.8-6.3 26.6-6.3 11.22 0 18.39 3.1 25.31 6.1 6.83 2.95 13.87 6 24.26 5.81 22.23-.41 35.88-20.35 47.92-37.94a168.18 168.18 0 0021-43l.09-.28a2.5 2.5 0 00-1.33-3.06l-.18-.08c-3.92-1.6-38.26-16.84-38.62-58.36-.34-33.74 25.76-51.6 31-54.84l.24-.15a2.5 2.5 0 00.7-3.51c-18-26.37-45.62-30.34-56.73-30.82z">
+              </path>
+            </svg>
+            <span class="ml-4 flex items-start flex-col leading-none">
+              <span class="text-xs text-gray-400 mb-1">Download on the</span>
+              <span class="title-font font-semibold text-white">App Store</span>
+            </span>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+        <img class="object-cover object-center rounded-3xl shadow-2xl hover:scale-105 transition-all duration-500"
+          alt="hero" src="LOGO-removebg-preview.png">
+      </div>
+
+    </div>
+  </section>
+
+
+
+
 
 </body>
+
 </html>
